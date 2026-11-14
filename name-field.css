@@ -1,0 +1,85 @@
+/* Name Field 01: Xu Nuo / 徐诺. Only presentation layers; content and Studio unchanged. */
+:root{--name-ink:#171717;--name-gray:#6c6b6a}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+/* Quiet, evenly distributed navigation. */
+.site-header{position:sticky;top:0;z-index:15;background:rgba(255,255,255,.92)}
+.site-header .wordmark{font-size:14px;letter-spacing:.025em;font-weight:500}
+.site-header .wordmark-cn{font-size:11px;letter-spacing:.09em}
+.site-header .nav-spread a{font-size:clamp(12px,1vw,14px);font-weight:400}
+/* Entry field - almost empty white space punctuated by an unstable name. */
+.hero.hero-namefield{height:auto;min-height:calc(100svh - 76px);padding:0 var(--field);border-bottom:1px solid #e9e9e9;display:flex;flex-direction:column;position:relative;justify-content:space-between;overflow:hidden;isolation:isolate}
+.hero-corners{display:flex;justify-content:space-between;align-items:start;gap:15px;padding-top:25px;color:#898b8a;font:10px/1.4 Arial,sans-serif;letter-spacing:.09em}
+.name-field{position:relative;width:min(760px,86vw);height:clamp(340px,48vw,520px);margin:auto;isolation:isolate;touch-action:pan-y;perspective:1200px;}
+.name-field .name-piece{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;white-space:nowrap;mix-blend-mode:multiply;will-change:transform}
+.name-field .name-word{display:block;line-height:.96;white-space:nowrap;animation:wandering 10s ease-in-out infinite alternate;animation-delay:var(--delay,0s);transform:translate3d(0,0,0);font-weight:400}
+.name-field .name-word.han{font-family:'Songti SC','STSong','Noto Serif CJK SC','SimSun',serif;font-weight:600;letter-spacing:-.12em}
+.name-field .name-word.han:not(.serif){font-family:'PingFang SC','Noto Sans CJK SC',sans-serif;font-weight:600;letter-spacing:-.09em}
+.name-field .name-word.serif-italic{font-family:Georgia,'Times New Roman',serif;font-style:italic;letter-spacing:-.055em}
+.name-field .name-word.sans-italic{font-family:'Helvetica Neue',Arial,sans-serif;font-style:italic;letter-spacing:-.07em}
+.name-field .name-word.mono{font-family:'Courier New',monospace;letter-spacing:-.05em}
+.name-field .piece-01{left:45%;top:35%;font-size:46px;z-index:3;color:#202020;--delay:-3s}
+.name-field .piece-02{left:48.5%;top:43.5%;font-size:42px;z-index:5;color:#171717;--delay:-7s}
+.name-field .piece-03{left:41%;top:47%;font-size:33px;z-index:4;color:rgba(35,35,35,.57);--delay:-2s}
+.name-field .piece-04{left:44%;top:55%;font-size:38px;z-index:2;color:rgba(32,32,32,.69);--delay:-5s}
+.name-field .piece-05{left:58%;top:61%;font-size:51px;z-index:3;color:#202020;--delay:-8s}
+.name-field .piece-06{left:50%;top:59%;font-size:31px;z-index:6;color:rgba(24,24,24,.72);--delay:-1s}
+.name-field .piece-07{left:65%;top:72%;font-size:28px;z-index:4;color:#272727;--delay:-4s}
+.name-field .piece-08{left:53%;top:78%;font-size:18px;z-index:1;color:rgba(69,75,82,.35);--delay:-3s}
+.name-field .piece-09{left:60%;top:44%;font-size:22px;z-index:2;color:rgba(25,25,25,.3);--delay:-6s}
+.name-field .piece-10{left:38%;top:58%;font-size:20px;z-index:3;color:rgba(22,22,22,.5);--delay:-4s}
+.name-field .piece-11{left:37%;top:62%;font-size:22px;z-index:4;color:rgba(22,22,22,.36);--delay:-9s}
+.name-field .piece-12{left:72%;top:52%;font-size:18px;z-index:2;color:rgba(20,20,20,.35);--delay:-2s}
+@keyframes wandering{0%{transform:translate(-4px,5px) rotate(-1deg)}50%{transform:translate(5px,-6px) rotate(.65deg)}100%{transform:translate(-1px,7px) rotate(-.4deg)}}
+.hero-bottomline{display:flex;justify-content:space-between;align-items:end;gap:20px;padding:0 0 28px;color:#666;position:relative;z-index:2}
+.hero-bottomline p{margin:0;font-size:11px;line-height:1.5;letter-spacing:.045em}
+.scroll-link{font-size:11px;letter-spacing:.07em;border-bottom:1px solid #a5a5a5;padding-bottom:5px;text-decoration:none;transition:opacity .25s}
+.scroll-link:hover{opacity:.47}
+/* The first scroll reveals an artwork rather than a navigation gate. */
+.featured-row{display:grid;grid-template-columns:minmax(110px,1fr) minmax(0,3.2fr);gap:clamp(35px,4.5vw,88px);align-items:end;margin-bottom:clamp(120px,12vw,195px)}
+.featured-row .featured-aside{align-self:start;padding-top:11px}
+.featured-aside p{max-width:240px;margin:17px 0 0;font:clamp(13px,1.2vw,17px)/1.55 Georgia,'Songti SC',serif;color:#666}
+.featured-row .hero-feature{margin:0;width:100%;min-width:0;}
+.featured-row .hero-feature img{max-height:74vh;object-fit:contain}
+.featured-row .hero-feature .feature-caption{font-size:12px}
+.works-list-heading{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #dbdcda;padding-top:14px;margin-bottom:40px;font-size:10px;letter-spacing:.1em;color:#727272}
+/* Unrelated cards stay calm, with the existing asymmetrical layout from art-direction.css. */
+#works .section-note{margin-bottom:68px}
+@media(max-width:950px){
+ .hero.hero-namefield{min-height:calc(100svh - 76px)}
+ .name-field{width:min(700px,90vw);height:420px}
+ .featured-row{grid-template-columns:1fr 3fr;gap:30px}
+}
+@media(max-width:660px){
+ .hero.hero-namefield{min-height:calc(100svh - 100px);padding:0 var(--field)}
+ .hero-corners{padding-top:25px;font-size:9px}
+ .name-field{width:100%;height:350px;max-width:460px;min-height:0;}
+ .name-field .name-piece{font-size:calc(var(--mobile-size,1) * 1px)!important}
+ .name-field .piece-01{--mobile-size:34}
+ .name-field .piece-02{--mobile-size:31}
+ .name-field .piece-03{--mobile-size:27}
+ .name-field .piece-04{--mobile-size:29}
+ .name-field .piece-05{--mobile-size:39}
+ .name-field .piece-06{--mobile-size:24}
+ .name-field .piece-07{--mobile-size:22}
+ .name-field .piece-08{--mobile-size:15}
+ .name-field .piece-09{--mobile-size:18}
+ .name-field .piece-10{--mobile-size:16}
+ .name-field .piece-11{--mobile-size:18}
+ .name-field .piece-12{--mobile-size:15}
+ .hero-bottomline{align-items:start;padding-bottom:26px}
+ .hero-bottomline p{max-width:185px;font-size:10px}
+ .scroll-link{font-size:10px;white-space:nowrap}
+ .featured-row{display:block;margin-bottom:95px}
+ .featured-aside{margin-bottom:28px;display:flex;justify-content:space-between;gap:20px;align-items:baseline}
+ .featured-aside p{margin:0;font-size:13px;max-width:230px;text-align:right}
+ .featured-row .hero-feature{width:100%}
+ #works .section-note{margin-bottom:42px}
+}
+@media(max-width:380px){
+ .hero-corners{font-size:8px}
+ .hero-bottomline{gap:9px}
+ .hero-bottomline p{font-size:9px}
+ .scroll-link{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.name-field .name-word{animation:none!important}.name-field .name-piece{transform:translate(-50%,-50%)!important}}
+@media print{.hero.hero-namefield{min-height:0;height:230px}.name-field{height:130px}.hero-corners,.hero-bottomline{display:none}}
