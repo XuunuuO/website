@@ -1,19 +1,65 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; media-src 'self' blob: https:; connect-src 'self' https://api.github.com; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Studio — Xu Nuo</title><link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./admin.css"></head><body>
-<header><a class="brand" href="./">XU NUO<span> / STUDIO</span></a><div class="actions"><a href="./" target="_blank" rel="noopener">查看网站 ↗</a><button id="connect">连接发布账号</button><button id="publish" class="primary" disabled>发布更新</button></div></header>
-<div class="statusbar"><span id="status" role="status" aria-live="polite">正在载入作品…</span><span id="account">未连接 · 可先编辑草稿</span></div>
-<div class="layout"><aside><div class="aside-head"><h1>作品管理</h1><button id="add" disabled>＋ 新增</button></div><label class="search"><span class="sr-only">搜索作品</span><input id="search" placeholder="搜索作品名称" type="search"></label><div id="list"></div><div class="aside-tools"><button id="reload">重新载入线上版本</button><button id="export">导出草稿备份</button><label class="file-button">导入草稿备份<input id="import" type="file" accept="application/json,.json"></label><p>草稿自动保存在此浏览器。点击「发布更新」后，访客才能看到修改。隐藏仅从展示中移除，不是私密存储。</p></div></aside>
-<main><div id="empty">正在载入…</div><form id="editor" hidden>
-<div class="editor-heading"><div><p class="eyebrow">EDIT PROJECT</p><h2 id="editing-title">编辑作品</h2></div><button id="preview-button" type="button">预览作品 ↗</button></div>
-<div class="row"><label>分类<select name="category"><option value="works">艺术作品</option><option value="curatorial">策展及相关项目</option></select></label><label>年份<input name="year" maxlength="30" placeholder="2026"></label><label>展示状态<select name="hidden"><option value="false">公开展示</option><option value="true">暂时隐藏</option></select></label></div>
-<div class="row"><label>中文标题<input name="zh" maxlength="200" required></label><label>English title<input name="title" maxlength="250" required></label></div>
-<div class="row"><label>中文媒介 / 身份<input name="mediumZh" maxlength="400"></label><label>Medium / role<input name="medium" maxlength="400"></label></div>
-<div class="row"><label>中文作品说明<textarea name="descriptionZh" rows="11"></textarea></label><label>English description<textarea name="description" rows="11"></textarea></label></div>
-<section><div class="section-head"><h3>封面图片</h3><label class="file-button">选择新封面<input id="cover-upload" type="file" accept="image/jpeg,image/png,image/webp"></label></div><div class="cover-preview"><img id="cover-preview" alt="当前作品封面"></div><p class="hint">支持 JPG、PNG、WebP，自动缩放并转为 WebP。作品原图保留在你的设备上。</p></section>
-<section><div class="section-head"><h3>详情图片</h3><label class="file-button">＋ 添加图片<input id="gallery-upload" type="file" multiple accept="image/jpeg,image/png,image/webp"></label></div><div id="gallery"></div><p class="hint">按显示顺序排列，可调整顺序或移除；发布前不会修改线上图片。</p></section>
-<section><h3>作品视频</h3><label>视频链接<input name="video" type="text" placeholder="YouTube / Vimeo / MP4 / WebM 链接"></label><div class="video-actions"><label class="file-button">上传短视频<input id="video-upload" type="file" accept="video/mp4,video/webm"></label><button id="remove-video" type="button">移除视频</button></div><p class="hint">短视频支持 MP4 / WebM，单个不超过 20 MB。完整影片请填写视频链接；自动播放关闭。</p></section>
-<div class="editor-foot"><span id="project-id"></span><div><button id="move-up" type="button">↑ 上移作品</button><button id="move-down" type="button">↓ 下移作品</button></div></div>
-</form></main></div>
-<dialog id="connect-dialog"><div class="dialog-head"><h2>连接发布账号</h2><button class="close" type="button" aria-label="关闭">×</button></div><p>发布到 <strong>XuunuuO / website</strong>。授权码仅用于向 GitHub 提交作品，不会保存在草稿、代码或浏览器存储中；刷新后需重新连接。</p><details><summary>首次连接：如何获取专用授权码</summary><ol><li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub 授权码设置 ↗</a>，名称可填 Xu Nuo Studio。</li><li>设置到期时间，例如 30 天。</li><li>Repository access 选择 Only select repositories，只选择 <strong>website</strong>。</li><li>Repository permissions 中仅将 <strong>Contents</strong> 设为 <strong>Read and write</strong>；Metadata 保持默认只读。</li><li>生成后复制到下方。请勿把授权码发送给别人或写进作品内容。</li></ol></details><label>Fine-grained personal access token<input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></label><p id="connect-error" role="alert"></p><div class="actions"><button id="disconnect" type="button">断开连接</button><button id="authorize" class="primary" type="button">连接 GitHub</button></div></dialog>
-<dialog id="preview-dialog"><div class="dialog-head"><h2>作品预览</h2><div><button id="preview-lang">EN</button><button class="close" aria-label="关闭">×</button></div></div><div id="preview-content"></div></dialog>
-<dialog id="publish-dialog"><div class="dialog-head"><h2>发布更新</h2><button class="close" aria-label="关闭">×</button></div><p id="publish-summary"></p><p>发布后网站通常需要 1–3 分钟更新。所有修改将保留在 GitHub 历史记录中。</p><button id="confirm-publish" class="primary">确认发布到网站</button></dialog>
-<script type="module" src="./admin.mjs"></script></body></html>
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; media-src 'self' blob: https:; connect-src 'self' https://api.github.com; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>Xu Nuo Studio — Portfolio Editor</title><link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./admin-v2.css?v=2"></head>
+<body>
+<header class="studio-header"><a href="./" class="studio-brand">XU NUO <span>/ STUDIO</span></a><div class="head-actions"><span id="connection-label" class="connection-label">未连接</span><a href="./" target="_blank" rel="noopener">查看网站 ↗</a><button id="connect" type="button">连接 GitHub</button><button id="publish" type="button" class="primary" disabled>发布更新</button></div></header>
+<div class="statusbar"><span id="status" role="status" aria-live="polite">正在读取项目…</span><span id="draft-status">未发布草稿保存在当前浏览器</span></div>
+<div class="studio-layout">
+  <aside class="sidebar">
+    <h1>内容管理</h1>
+    <div class="sidebar-tabs" role="tablist" aria-label="内容分类"><button type="button" data-tab="works" class="active">作品</button><button type="button" data-tab="curatorial">策展</button><button type="button" data-tab="texts">文本</button></div>
+    <div class="sidebar-add"><input id="search" type="search" placeholder="搜索标题" aria-label="搜索标题"><button type="button" id="add">＋ 新增</button></div>
+    <div id="item-list" aria-label="内容列表"></div>
+    <div class="sidebar-tools">
+      <p class="micro-label">DATA / BACKUP</p>
+      <button id="reload" type="button">重新读取线上内容</button><button id="export" type="button">导出草稿与媒体</button><label class="file-action">导入草稿备份<input id="import" type="file" accept="application/json,.json"></label>
+      <button id="history" type="button">查看版本 / 恢复上次作品数据</button>
+      <p class="tiny-muted">草稿和新媒体保存在当前浏览器。公开网站只有在「发布更新」后才会改变。隐藏项目仍保存在公开仓库，不代表私密存储。</p>
+    </div>
+  </aside>
+  <main class="editor-main"><div id="editor-empty" class="empty-state">选择左侧作品或文本开始编辑。</div>
+    <section id="project-editor" hidden>
+      <div class="editor-title-row"><div><span class="eyebrow">PROJECT / EDITOR</span><h2 id="project-heading">编辑作品</h2></div><button id="project-preview" type="button" class="secondary">预览作品 ↗</button></div>
+      <div class="editor-card"><div class="card-heading"><h3>基本信息</h3><span>01 / INFORMATION</span></div>
+        <div class="form-grid cols-3"><label>类别<select id="p-category"><option value="works">作品</option><option value="curatorial">策展 / 相关项目</option></select></label><label>年份<input id="p-year" maxlength="30" placeholder="2026"></label><label>展示状态<select id="p-hidden"><option value="false">公开展示</option><option value="true">暂时隐藏</option></select></label></div>
+        <div class="form-grid"><label>中文标题<input id="p-zh" maxlength="200"></label><label>English title<input id="p-title" maxlength="250"></label></div>
+        <div class="form-grid"><label>中文媒介 / 身份<input id="p-medium-zh" maxlength="400"></label><label>Medium / role<input id="p-medium" maxlength="400"></label></div>
+        <div class="form-grid"><label>中文作品介绍<textarea id="p-desc-zh" rows="5"></textarea></label><label>English description<textarea id="p-desc" rows="5"></textarea></label></div>
+        <p class="hint">上述介绍是作品摘要，适用于不使用内容模块的旧作品。使用内容模块后，它将作为归档信息保留，不在详情页重复显示。</p>
+      </div>
+      <div class="editor-card"><div class="card-heading"><h3>首页封面</h3><span>02 / COVER</span></div>
+        <div class="cover-zone"><img id="cover-image" alt="作品封面"><div><p>首页封面与详情页影像独立设置。</p><label class="file-action">选择新封面<input type="file" id="cover-upload" accept="image/jpeg,image/png,image/webp"></label><button type="button" class="link-button" id="cover-remove">移除自定义封面</button><p class="hint">JPG、PNG、WebP，自动转换并优化为 WebP（最长边 2200px）。</p></div></div>
+      </div>
+      <div class="editor-card"><div class="card-heading"><div><h3>作品页面内容</h3><p class="hint">文字、图片、视频可以混合排列。拖动左侧手柄或用 ↑ ↓ 调整顺序。</p></div><span>03 / STORY BUILDER</span></div>
+        <div class="builder-actions"><button type="button" id="add-text">＋ 文字</button><button type="button" id="add-image">＋ 图片</button><button type="button" id="add-video">＋ 视频</button><button type="button" id="legacy-convert" class="subtle">导入旧版说明/图片/视频</button></div>
+        <div id="blocks" class="blocks" aria-live="polite"></div><p id="blocks-help" class="hint">这件作品尚未使用可排序模块，公开页面仍沿用原有说明、单视频与图片展示。添加内容模块后将采用新版编排。</p>
+      </div>
+      <div class="editor-card"><div class="card-heading"><h3>作品档案信息</h3><span>04 / ARCHIVE FIELDS</span></div>
+        <div class="form-grid"><label>尺寸 / Dimensions<input id="m-dimensions-zh" placeholder="171 × 42 × 5 cm"></label><label>Dimensions (EN)<input id="m-dimensions-en" placeholder="171 × 42 × 5 cm"></label></div>
+        <div class="form-grid"><label>材料 / Materials<input id="m-materials-zh" placeholder="木板、屏幕、耳机"></label><label>Materials (EN)<input id="m-materials-en" placeholder="Wood, screen, headphones"></label></div>
+        <div class="form-grid"><label>时长 / Duration<input id="m-duration" placeholder="06:43 / variable"></label><label>首次展出 / Venue (中文)<input id="m-venue-zh" placeholder="上海 · 2026"></label></div>
+        <div class="form-grid"><label>首次展出 / Venue (EN)<input id="m-venue-en"></label><label>合作及鸣谢 / Credits (中文)<input id="m-credits-zh"></label></div>
+        <div class="form-grid"><label>Credits (EN)<input id="m-credits-en"></label><div class="field-empty"></div></div>
+      </div>
+      <div class="editor-footer"><span id="project-id"></span><div><button type="button" id="move-up">↑ 作品上移</button><button type="button" id="move-down">↓ 作品下移</button></div></div>
+    </section>
+    <section id="text-editor" hidden>
+      <div class="editor-title-row"><div><span class="eyebrow">TEXT / EDITOR</span><h2 id="text-heading">编辑文本</h2></div><button type="button" id="text-preview" class="secondary">预览文本 ↗</button></div>
+      <div class="editor-card"><div class="card-heading"><h3>文本档案</h3><span>01 / META</span></div>
+        <div class="form-grid cols-3"><label>文本类别<select id="t-category"><option value="writing">随笔 / 写作</option><option value="curatorial">策展前言</option><option value="work">作品文本</option><option value="notes">笔记 / 片段</option></select></label><label>年份 / 日期<input id="t-date" placeholder="2026.11"></label><label>展示状态<select id="t-hidden"><option value="false">公开展示</option><option value="true">暂时隐藏</option></select></label></div>
+        <div class="form-grid"><label>中文标题<input id="t-zh"></label><label>English title<input id="t-title"></label></div>
+        <div class="form-grid"><label>中文摘要 / 列表简介<textarea id="t-excerpt-zh" rows="3"></textarea></label><label>English excerpt<textarea id="t-excerpt" rows="3"></textarea></label></div>
+        <div class="form-grid"><label>正文（中文）<textarea id="t-body-zh" rows="18" class="writing-editor"></textarea></label><label>Body (English)<textarea id="t-body" rows="18" class="writing-editor"></textarea></label></div>
+        <p class="hint">支持自然段与换行。不必每篇都配图片；如果只有中文正文，可暂时隐藏文本并补齐英文后再发布。</p>
+      </div>
+      <div class="editor-footer"><span id="text-id"></span><div><button type="button" id="text-up">↑ 上移</button><button type="button" id="text-down">↓ 下移</button></div></div>
+    </section>
+  </main>
+</div>
+<dialog id="connect-dialog" class="modal"><div class="dialog-title"><h2>连接 GitHub 发布账号</h2><button class="dialog-close" aria-label="关闭">×</button></div><p>授权码只在本次打开页面期间保存在内存，不会保存在网站、代码、草稿或浏览器存储中。</p><details><summary>如何创建发布授权码</summary><ol><li>进入 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub 授权码页面 ↗</a></li><li>Repository access 选择 Only select repositories → website。</li><li>Repository permissions 中 Contents 选择 Read and write。</li><li>复制生成的 fine-grained token 到下方，切勿分享给别人。</li></ol></details><label class="stack-label">Fine-grained token<input type="password" id="token" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></label><p id="connect-error" role="alert" class="error"></p><div class="dialog-buttons"><button id="disconnect" type="button">断开连接</button><button id="authorize" type="button" class="primary">连接账号</button></div></dialog>
+<dialog id="preview-dialog" class="modal preview-modal"><div class="dialog-title"><h2>发布前预览</h2><div class="dialog-buttons"><button id="preview-lang" type="button">EN</button><button class="dialog-close" aria-label="关闭">×</button></div></div><div id="preview-content"></div></dialog>
+<dialog id="publish-dialog" class="modal"><div class="dialog-title"><h2>确认发布到公开网站</h2><button class="dialog-close" aria-label="关闭">×</button></div><p id="publish-summary"></p><p class="hint">发布前会检查 GitHub 线上版本是否变化；若发生冲突，草稿会保留在本地。页面更新需要等待 GitHub Pages 部署。</p><div class="dialog-buttons"><button id="confirm-publish" type="button" class="primary">确认发布</button></div></dialog>
+<dialog id="history-dialog" class="modal"><div class="dialog-title"><h2>版本记录与恢复</h2><button class="dialog-close" aria-label="关闭">×</button></div><div id="history-list"></div><p class="hint">恢复只针对 data.js（作品与文本内容），通过新增提交完成；不会删除旧文件、撤销网站设计或删除媒体文件。恢复后无法直接找回未备份的本地草稿。</p><button id="rollback" type="button" class="danger">恢复上次 Studio 发布前的数据</button></dialog>
+<script type="module" src="./admin-v2.mjs?v=2"></script>
+</body></html>
