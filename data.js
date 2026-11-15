@@ -52,7 +52,19 @@ window.SITE_DATA={
       "gallery": [
         "all-that-appears-detail"
       ]
-    },
+    ,
+      "blocks": [
+        {
+          "type": "text",
+          "en": "LABEL\nTo disturb a world saturated with appearances; to stir the dust of data, of perception, of meaning.",
+          "zh": "展签\n搅动一个被表象充满的世界；搅动数据、感知与意义的尘埃。"
+        },
+        {
+          "type": "text",
+          "en": "WORK DESCRIPTION\nFootage from Yuhuang Mountain in Hangzhou is combined with images recorded elsewhere in China, Canada, and the United States. Fragments are cropped, layered, and rearranged into a landscape that seems continuous but belongs to no single place. Moving between the natural environment, the artist’s body, and real-time image processing, the work looks at how perception reconstructs a world saturated with appearances.\n\nThe sound combines a voice counting from 1 to 64, binary rhythms, water, wind, leaves, and birdsong. Sixty-four refers both to the hexagrams of the I Ching and to 64-bit computing: a symbolic connection between different structures of combination and change. The work extends experiments begun in 2024, in which custom code processed live camera images before projecting them back onto the landscape.",
+          "zh": "作品说明\n作品以杭州玉皇山拍摄的景象为主体，叠加来自中国其他地区、加拿大和美国的影像片段。不同地点与时间的画面被裁剪、拼接、重组，生成一片看似连续、却不对应任何单一真实地点的风景。作品在自然环境、身体与实时图像处理之间，探索感知如何重新构成世界。\n\n声音将从 1 数到 64 的人声、由零和一组成的节奏，与水流、风声、树叶和鸟鸣交织。64 同时指向《易经》的六十四卦与计算机的 64 位逻辑，在不同的组合与变化结构之间建立象征性联系。作品延续了自 2024 年开始的实验：用自编程序实时处理摄像头捕捉的景象，再将影像投回原本的环境。"
+        }
+      ]},
     {
       "id": "here-i-work",
       "title": "Here I Work",
@@ -367,3 +379,4 @@ window.SITE_DATA={
     }
   }
 };
+
