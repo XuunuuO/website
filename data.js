@@ -7,17 +7,127 @@ window.SITE_DATA={
       "year": "2026",
       "medium": "Video installation",
       "mediumZh": "影像装置",
-      "description": "Silence may signify prudence, wisdom, refusal, or self-protection; it may also conceal timidity, ignorance, or a lack of judgment. The installation uses a curved wooden panel, an embedded screen, headphones, and a series of openings to invite different acts of seeing and listening. The artist reads the artwork’s exhibition label aloud, yet her voice is deliberately indistinct. Words fall silent; meaning drifts. The work considers the positions and meanings that viewers assign to silence, and the effort involved in choosing not to speak.\n\nThe 171 × 40 cm panel corresponds to the artist’s bodily dimensions. Openings on its front and back do not align; seeing and listening require viewers to shift their position and attention. Three textual details extend this encounter: “I’m sure you understand.” in a recess at the top, “Listen, or appear to.” on the headphones, and a fictional label, “The Art of Saying Nothing,” attached to the power strip.",
-      "descriptionZh": "沉默可能意味着审慎、智慧、拒绝或自我保护，也可能掩盖胆怯、无知与缺乏判断。作品由弯曲木板、嵌入式屏幕、耳机与孔洞构成，引导观众以不同身体姿态观看和聆听。艺术家朗读作品展签，声音却被处理得模糊不清，甚至归于静默。作品关注人们如何依据情境赋予沉默立场和意义，以及主动选择不说话时所付出的努力。\n\n171 × 40 厘米的木板对应艺术家自身的身体尺度。正反两面的孔洞并不对齐，观看与聆听需要观众不断调整位置与注意力。三处文本延续了这一经验：顶部凹槽内的“I’m sure you understand.”，耳机上的“Listen, or appear to.”，以及贴在供电插线板上的虚构展签“The Art of Saying Nothing”。",
+      "description": "Silence is a skill that requires constant practice.\n\nIt may signify prudence, wisdom, refusal, or self-protection, but it may also conceal timidity, ignorance, or a lack of judgment. \n\nRadically different intentions can take on nearly identical outward forms.Words fall silent; meaning drifts. People assign positions and meanings to silence according to identity, context, and their own experiences.\n\nWhen silence becomes a deliberate choice, it begins to involve knowing when to withhold judgment, how to maintain one's composure, and how to confront the speculation that follows. Even saying nothing is not necessarily effortless.\n\nPerhaps, then, silence is a skill that requires constant practice.\n",
+      "descriptionZh": "沉默是一项需要反复训练的技能。它可能意味着审慎、智慧、拒绝或自我保护，也可能掩盖胆怯、无知与缺乏判断。截然不同的动机，却往往呈现出近乎相同的外部姿态。语句暂停，意义游荡。人们往往依据身份、情境与自身的经验，为沉默赋予立场和意义。\n当沉默成为一种主动选择，它便开始涉及何时保留判断、如何维持姿态，以及怎样面对随之而来的猜测。即便什么都不说，也未必是一件毫不费力的事。因而，沉默或许是一项需要反复训练的技能。\n\n",
       "gallery": [
         "silence-detail",
         "silence-back"
+      ],
+      "details": {
+        "dimensionsZh": "171cm*40cm*5cm",
+        "materialsZh": "影像装置",
+        "venueZh": "上海穹顶艺术中心",
+        "venueEn": "West Bund Dome Art Cente",
+        "materialsEn": "Video Installation ",
+        "dimensionsEn": "171cm*40cm*5cm"
+      },
+      "blocks": [
+        {
+          "id": "ce0a1072-b15",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-bd2ea096-8604-4446-9a24-44850c5cb8b6.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "69912256-cb2",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-84033965-285d-4590-be34-c1073c1d0e0d.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "a2975283-645",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-0ec060e4-c7b9-495f-a45f-762566753936.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "790289a5-c75",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-bc274881-5fe8-45c7-ab4e-a9e83d221c67.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "fb71d27e-fe5",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-a6e3a8d2-292e-41f1-9fb7-ae2016feeeb8.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "b6dc88f1-d79",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-af5e10c5-c3c5-49fd-9955-6f8e95fbb214.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "159a9a97-49a",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-e731f764-6b01-499d-a167-6d3b6c231f0f.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "d9d6d1a4-c3f",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-8c75f0c7-9a7c-4d3a-88f3-5d4ec1df34b2.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "6935cb2e-967",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-0ec426f8-626d-4c9b-8dec-a1db414583c1.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "0eb331d9-fda",
+          "type": "text",
+          "zh": "171 × 40 厘米的木板对应艺术家自身的身体尺度。正反两面的孔洞并不对齐，观看与聆听需要观众不断调整位置与注意力。三处文本延续了这一经验：顶部凹槽内的“I’m sure you understand.”，耳机上的“Listen, or appear to.”，以及贴在供电插线板上的虚构展签“The Art of Saying Nothing”。",
+          "en": "The installation consists of a curved wooden panel measuring 171 cm in height and 40 cm in width, corresponding to the artist's own bodily dimensions.\nA screen embedded in the front of the panel shows the artist reading the artwork's exhibition label aloud. The audio is deliberately altered, making her voice difficult to discern and, at times, completely silent. Her voice can only be heard through headphones positioned at the back of the panel.\nThe lower half of the panel is punctuated by numerous openings. Those on the front and back do not align, requiring viewers to shift their gaze and adjust their viewing angles to look through them.\nThe screen, headphones, and openings each invite different bodily movements. Seeing and listening take place from different positions, requiring viewers to continually adjust their position and attention as they encounter the work.\nThree phrases are placed in different parts of the installation.\n\n“I'm sure you understand.” appears inside a recess at the top of the wooden panel. The phrase expresses apparent certainty, yet offers no guarantee that understanding has actually taken place.\nA fictional exhibition label titled “The Art of Saying Nothing” is attached to the power strip supplying electricity to the installation, placing the language of art display on an otherwise overlooked functional object.\n\nEncountered through movement, searching, and reading, these textual details connect everyday gestures of expression, listening, and understanding with the conventions through which an artwork is presented.\n\n\n\n\n",
+          "src": "",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        }
       ]
     },
     {
       "id": "layered-edge",
       "title": "The Layered Edge: Attention Is All You Need",
-      "zh": "层叠的边界：Attention Is All You Need",
+      "zh": "边缘层次：Attention Is All You Need",
       "year": "2025",
       "medium": "Video",
       "mediumZh": "影像",
@@ -25,7 +135,8 @@ window.SITE_DATA={
       "descriptionZh": "皮肤是身体与世界之间的边界，也是一层不断变化的多孔界面。作品将皮肤、面部及身体细节的影像放大、错置并重新拼贴，在大型环绕屏幕上形成不断变动的视觉表面，探索感官经验、计算机制与认知之间的关系。",
       "gallery": [
         "layered-edge-detail"
-      ]
+      ],
+      "blocks": []
     },
     {
       "id": "nothing-happens",
@@ -43,7 +154,7 @@ window.SITE_DATA={
     {
       "id": "all-that-appears",
       "title": "All That Appears",
-      "zh": "一切所现",
+      "zh": "惹尘埃",
       "year": "2025",
       "medium": "Large-scale video installation",
       "mediumZh": "大型影像装置",
@@ -51,8 +162,7 @@ window.SITE_DATA={
       "descriptionZh": "作品以杭州玉皇山拍摄的景象为主体，叠加来自中国其他地区、加拿大和美国的影像片段。不同地点与时间的画面被裁剪、拼接、重组，生成一片看似连续、却不对应任何单一真实地点的风景。作品在自然环境、身体与实时图像处理之间，探索感知如何重新构成世界。\n\n声音将从 1 数到 64 的人声、由零和一组成的节奏，与水流、风声、树叶和鸟鸣交织。64 同时指向《易经》的六十四卦与计算机的 64 位逻辑，在不同的组合与变化结构之间建立象征性联系。作品延续了自 2024 年开始的实验：用自编程序实时处理摄像头捕捉的景象，再将影像投回原本的环境。",
       "gallery": [
         "all-that-appears-detail"
-      ]
-    ,
+      ],
       "blocks": [
         {
           "type": "text",
@@ -68,7 +178,8 @@ window.SITE_DATA={
           "type": "image",
           "src": "all-that-appears-detail"
         }
-      ]},
+      ]
+    },
     {
       "id": "here-i-work",
       "title": "Here I Work",
@@ -381,7 +492,6 @@ window.SITE_DATA={
       "documentation": "作品记录",
       "allCuratorial": "← 返回策展项目"
     }
-  }
+  },
+  "texts": []
 };
-
-
