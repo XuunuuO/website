@@ -287,3 +287,10 @@ body[data-font-style="experimental"] .hero h1,body[data-font-style="experimental
   .cv-contact-inline{font-size:11px}
 }
 @media(max-width:360px){.site-header .nav-spread a{font-size:10px}}
+
+
+@media(hover:hover) and (pointer:fine){
+  body{cursor:url("./cursor.svg") 2 2,auto}
+  a,button,[role="button"],#archive-toggle,.viewer-close,.text-action{cursor:url("./cursor.svg") 2 2,pointer}
+  input,textarea,select,[contenteditable="true"]{cursor:text}
+}
