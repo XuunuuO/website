@@ -83,3 +83,32 @@
 }
 @media(prefers-reduced-motion:reduce){.name-field .name-word{animation:none!important}.name-field .name-piece{transform:translate(-50%,-50%)!important}}
 @media print{.hero.hero-namefield{min-height:0;height:230px}.name-field{height:130px}.hero-corners,.hero-bottomline{display:none}}
+
+
+/* Opening field: a quiet name on a full white screen. */
+body[data-page="home"]{background:#fff}
+.site-header{position:fixed!important;inset:0 0 auto;z-index:15;transition:transform .45s ease,opacity .35s ease,visibility .45s;will-change:transform}
+body:not(.has-scrolled) .site-header{opacity:0;visibility:hidden;transform:translateY(-105%);pointer-events:none}
+body.has-scrolled .site-header{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}
+.hero.hero-namefield{height:100svh;min-height:100svh;padding:0 var(--field)!important;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden}
+.hero-corners,.hero-bottomline{display:none!important}
+.name-field{width:min(760px,86vw);height:min(64vh,480px);margin:-7vh auto 0;flex:none}
+.name-field .name-piece{transition:translate .75s cubic-bezier(.2,.65,.3,1),opacity .6s ease}
+.name-field .piece-01{left:45%;top:39%;font-size:20px}
+.name-field .piece-02{left:48%;top:45%;font-size:18px}
+.name-field .piece-03{left:43%;top:49%;font-size:17px}
+.name-field .piece-04{left:46%;top:55%;font-size:17px}
+.name-field .piece-05{left:56%;top:58%;font-size:21px}
+.name-field .piece-06{left:51%;top:61%;font-size:15px}
+.name-field .piece-07{left:62%;top:68%;font-size:15px}
+.name-field .piece-08{left:53%;top:73%;font-size:12px}
+.name-field .piece-09{left:58%;top:47%;font-size:13px}
+.name-field .piece-10{left:40%;top:60%;font-size:13px}
+.name-field .piece-11{left:42%;top:65%;font-size:14px}
+.name-field .piece-12{left:65%;top:54%;font-size:12px}
+.hero-namefield.is-scrolling .piece-01{translate:-10px -9px}.hero-namefield.is-scrolling .piece-02{translate:5px -7px}.hero-namefield.is-scrolling .piece-03{translate:-13px 0}.hero-namefield.is-scrolling .piece-04{translate:-8px 7px}.hero-namefield.is-scrolling .piece-05{translate:9px 8px}.hero-namefield.is-scrolling .piece-06{translate:2px 12px}.hero-namefield.is-scrolling .piece-07{translate:14px 8px}.hero-namefield.is-scrolling .piece-08{translate:6px 13px}.hero-namefield.is-scrolling .piece-09{translate:8px -10px}.hero-namefield.is-scrolling .piece-10{translate:-14px 5px}.hero-namefield.is-scrolling .piece-11{translate:-11px 9px}.hero-namefield.is-scrolling .piece-12{translate:13px -5px}
+#scroll-glints{position:absolute;left:0;top:0;width:100%;height:0;overflow:visible;pointer-events:none;z-index:4}
+.scroll-glint{position:absolute;width:3px;height:3px;border-radius:50%;background:#d2b16b;box-shadow:0 0 8px 2px rgba(210,177,107,.16);opacity:0;transform:translate(-50%,-50%) scale(.65);transition:opacity .55s ease,transform .7s cubic-bezier(.2,.65,.3,1);mix-blend-mode:multiply}
+.scroll-glint.is-lit{opacity:.58;transform:translate(-50%,-50%) scale(1)}
+@media(max-width:660px){.hero.hero-namefield{min-height:100svh;height:100svh;padding:0 var(--field)!important}.name-field{width:100%;height:min(58vh,400px);margin:-5vh auto 0}.name-field .name-piece{font-size:var(--opening-mobile-size,14px)!important}.name-field .piece-01{--opening-mobile-size:17px;left:43%;top:39%}.name-field .piece-02{--opening-mobile-size:16px;left:48%;top:45%}.name-field .piece-03{--opening-mobile-size:15px;left:40%;top:49%}.name-field .piece-04{--opening-mobile-size:15px;left:44%;top:55%}.name-field .piece-05{--opening-mobile-size:18px;left:56%;top:58%}.name-field .piece-06{--opening-mobile-size:13px;left:51%;top:61%}.name-field .piece-07{--opening-mobile-size:13px;left:62%;top:68%}.name-field .piece-08{--opening-mobile-size:11px;left:53%;top:73%}.name-field .piece-09{--opening-mobile-size:12px;left:58%;top:47%}.name-field .piece-10{--opening-mobile-size:11px;left:40%;top:60%}.name-field .piece-11{--opening-mobile-size:12px;left:42%;top:65%}.name-field .piece-12{--opening-mobile-size:11px;left:65%;top:54%}}
+@media(prefers-reduced-motion:reduce){.site-header,.name-field .name-piece,.scroll-glint{transition:none!important}.hero-namefield.is-scrolling .name-piece{translate:0 0!important}}
