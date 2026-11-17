@@ -9,7 +9,7 @@
   const update = () => {
     currentX += (targetX - currentX) * .075;
     currentY += (targetY - currentY) * .075;
-    pieces.forEach(({el,speed}) => { el.style.transform = `translate(calc(-50% + ${(currentX*speed).toFixed(2)}px), calc(-50% + ${(currentY*speed).toFixed(2)}px))`; });
+    pieces.forEach(({el,speed}) => { el.style.transform = 'translate(calc(-50% + ' + (currentX*speed).toFixed(2) + 'px), calc(-50% + ' + (currentY*speed).toFixed(2) + 'px))'; });
     if (Math.abs(targetX-currentX) > .1 || Math.abs(targetY-currentY) > .1) frame = requestAnimationFrame(update);
     else frame = 0;
   };
@@ -30,34 +30,36 @@
   }
 })();
 
-
-/* A scroll-revealed trail of light points leads from the name toward the first work. */
+/* Small, scattered glints briefly gather around the name as the visitor begins to scroll. */
 (() => {
   'use strict';
   const hero=document.querySelector('.hero-namefield');
   const field=document.getElementById('name-field');
-  const target=document.querySelector('.featured-row .hero-feature');
-  if(!hero||!field||!target)return;
+  if(!hero||!field)return;
   const layer=document.createElement('div');
   layer.id='scroll-glints';
   layer.setAttribute('aria-hidden','true');
   document.body.appendChild(layer);
-  const count=24,dots=Array.from({length:count},()=>{const dot=document.createElement('i');dot.className='scroll-glint';layer.appendChild(dot);return dot;});
+  const scatter=[[-78,-28],[-54,40],[-26,-64],[14,-42],[42,56],[78,-8],[91,38],[-96,14],[27,4]];
+  const dots=scatter.map(()=>{const dot=document.createElement('i');dot.className='scroll-glint';layer.appendChild(dot);return dot;});
   let frame=0;
+  const clamp=(n)=>Math.max(0,Math.min(1,n));
   function update(){
     frame=0;
     const sy=window.scrollY||0;
-    const a=field.getBoundingClientRect(),b=target.getBoundingClientRect();
-    const start={x:a.left+(window.scrollX||0)+a.width*.52,y:a.top+sy+a.height*.48};
-    const end={x:b.left+(window.scrollX||0)+Math.min(22,b.width*.04),y:b.top+sy+24};
-    const control={x:start.x+(end.x-start.x)*.7+Math.min(70,window.innerWidth*.06),y:start.y+(end.y-start.y)*.52};
-    const reveal=Math.max(0,Math.min(1,(sy+12)/Math.max(220,hero.offsetHeight*.64)));
-    const lit=Math.ceil(reveal*count);
+    const box=field.getBoundingClientRect();
+    const cx=box.left+(window.scrollX||0)+box.width*.52;
+    const cy=box.top+sy+box.height*.48;
+    const scale=Math.min(1,Math.max(.68,box.width/420));
+    const reveal=clamp((sy+14)/120);
+    const dissolve=1-clamp((sy-hero.offsetHeight*.38)/(hero.offsetHeight*.24));
+    const visible=Math.ceil(reveal*dots.length);
     dots.forEach((dot,i)=>{
-      const t=(i+1)/(count+1),u=1-t,wave=Math.sin(t*Math.PI*3)*9;
-      const x=u*u*start.x+2*u*t*control.x+t*t*end.x+wave;
-      const y=u*u*start.y+2*u*t*control.y+t*t*end.y;
-      dot.style.left=x+'px';dot.style.top=y+'px';dot.classList.toggle('is-lit',i<lit);
+      const [dx,dy]=scatter[i];
+      dot.style.left=(cx+dx*scale)+'px';
+      dot.style.top=(cy+dy*scale)+'px';
+      dot.style.setProperty('--glint-alpha',(0.26*dissolve).toFixed(3));
+      dot.classList.toggle('is-lit',i<visible&&dissolve>.02);
     });
     hero.classList.toggle('is-scrolling',sy>18);
     document.body.classList.toggle('has-scrolled',sy>42);
