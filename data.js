@@ -136,20 +136,142 @@ window.SITE_DATA={
       "gallery": [
         "layered-edge-detail"
       ],
-      "blocks": []
+      "blocks": [
+        {
+          "id": "32ebfa21-b61",
+          "type": "video",
+          "zh": "",
+          "en": "",
+          "src": "https://www.youtube.com/watch?v=RtiPN6QRC3w",
+          "captionZh": "视角1",
+          "captionEn": "view01",
+          "layout": "wide"
+        },
+        {
+          "id": "2919babc-581",
+          "type": "video",
+          "zh": "",
+          "en": "",
+          "src": "https://www.youtube.com/watch?v=N-btEq1gBGg",
+          "captionZh": "视角2",
+          "captionEn": "view02",
+          "layout": "wide"
+        },
+        {
+          "id": "39b5620e-1e9",
+          "type": "video",
+          "zh": "",
+          "en": "",
+          "src": "https://www.youtube.com/watch?v=Q2SCDW0GzZM",
+          "captionZh": "视角3",
+          "captionEn": "view03",
+          "layout": "wide"
+        },
+        {
+          "id": "9bd94f59-88c",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-67c2b6dd-46eb-4e32-9ce7-a0d5bdcfe56f.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        }
+      ],
+      "details": {
+        "venueZh": "UFO Terminal",
+        "venueEn": "UFO Terminal",
+        "creditsZh": "加载计划...3"
+      }
     },
     {
       "id": "nothing-happens",
       "title": "What Happens When Nothing Happens",
       "zh": "生成空白",
       "year": "2025",
-      "medium": "Video installation",
-      "mediumZh": "影像装置",
+      "medium": "",
+      "mediumZh": "创作型策展",
       "description": "Beginning with an interest in how large language models produce seemingly coherent language from incomplete information, the artist invented an exhibition that had never taken place. A poster, dates, labels, a catalogue and five fictitious artworks gave the event the appearance of a traceable past. She then installed a retrospective of this imaginary exhibition in the space where it was said to have occurred. The project asks how looking, documentation and narration persuade us that something has happened.\n\nThe five imagined works involve image, language, sound, and scent. Partial cues invite viewers to connect, associate, or misread. This is a conceptual parallel with language models, rather than a reproduction of their computational procedure.",
       "descriptionZh": "作品从大语言模型如何依据不完整信息生成连贯表达出发，虚构了一场从未发生的展览，并制作海报、时间、展签、图录与五件虚构作品。艺术家随后在这场虚构展览声称发生的场所中，举办了它的“回顾展”。作品追问：观看、档案和叙述如何使人相信一场事件曾经发生？\n\n五件虚构作品涉及图像、语言、声音与气味。局部线索邀请观众建立联系、联想或误读。这与语言模型构成概念上的类比，并不复现其计算过程。",
       "gallery": [
         "nothing-happens-detail"
-      ]
+      ],
+      "blocks": [
+        {
+          "id": "ef16fe61-b35",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-a6dac069-4bba-40f3-ae95-c895796e43f3.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "c5109307-d2f",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-4c7fc9ae-2d92-4dca-8008-8426397fb290.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "52a3ebfb-7b8",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-a7dcc6a9-bf92-40fc-9e87-3301a33a3a5c.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "a6f81f7c-c28",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-d24acd27-84ed-408e-8b90-0ab50c83c493.webp",
+          "captionZh": "",
+          "captionEn": "he imagined exhibition comprises five “works” involving image, language, sound, and scent. Like prompts awaiting activation, they offer fragments rather than fixed meanings. Viewers form connections through looking, pausing, associating, and even misreading. This structure draws a conceptual parallel with the way language models generate coherent expressions from contextual patterns; it does not reproduce their computational procedure. The project asks how meaning can emerge from partial cues and the viewer’s impulse to complete what is missing.",
+          "layout": "wide"
+        },
+        {
+          "id": "ce781a8b-213",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-e3a932b1-1912-4450-8373-e3f9ad482a9a.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "521666f3-c23",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-631635c1-8762-4cae-b466-8718a9c0e18d.webp",
+          "captionZh": "",
+          "captionEn": "",
+          "layout": "wide"
+        },
+        {
+          "id": "c2fb43a5-478",
+          "type": "image",
+          "zh": "",
+          "en": "",
+          "src": "media-e8db7bda-8b2b-4f19-aa09-34a4ac26fa34.webp",
+          "captionZh": "",
+          "captionEn": "The artist then installed a retrospective display of the imagined exhibition in the very space where it was said to have occurred. The original event never took place, yet its posters, labels, texts, and records acquired a tangible presence on site. Turning a model-inspired inquiry into an actual spatial intervention, the work asks what allows us to accept an exhibition as something that happened, and how looking, documentation, and narration contribute to the making of its apparent history.",
+          "layout": "wide"
+        }
+      ],
+      "details": {
+        "venueZh": "想象力学实验室",
+        "venueEn": "Imagokinetics"
+      }
     },
     {
       "id": "all-that-appears",
@@ -222,13 +344,14 @@ window.SITE_DATA={
     {
       "id": "while-looking",
       "title": "While Looking at a Column",
-      "zh": "当我看着一根柱子",
+      "zh": "面对对面",
       "year": "2024",
       "medium": "Installation",
       "mediumZh": "装置",
       "description": "What do we see when we look at an object? After filming a column in a tightly framed image on a phone, the artist placed that recording back into the original environment. The same object is encountered through a restricted camera frame and through a wider field of vision, where apparently insignificant surroundings remain visible.",
       "descriptionZh": "当我们注视一个物体时，究竟看见了什么？艺术家用手机将一根柱子拍成尽可能不包含周围事物的影像，再将影像放回原本的空间。通过受限的镜头画面与现实中的宽阔视野，重新思考那些似乎无关紧要、却始终存在于感知中的事物。",
-      "gallery": []
+      "gallery": [],
+      "cover": "media-d81e2ce5-53c5-4a40-ba90-11a8cfde4e3e.webp"
     },
     {
       "id": "unit-one",
