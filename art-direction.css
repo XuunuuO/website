@@ -290,7 +290,7 @@ body[data-font-style="experimental"] .hero h1,body[data-font-style="experimental
 
 
 @media(hover:hover) and (pointer:fine){
-  body{cursor:url("./cursor.svg") 2 2,auto}
-  a,button,[role="button"],#archive-toggle,.viewer-close,.text-action{cursor:url("./cursor.svg") 2 2,pointer}
+  body{cursor:auto}
+  a,button,[role="button"],#archive-toggle,.viewer-close,.text-action{cursor:pointer}
   input,textarea,select,[contenteditable="true"]{cursor:text}
 }
