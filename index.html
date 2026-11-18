@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./art-direction.css?v=names-03">
   <link rel="stylesheet" href="./name-field.css?v=names-03">
   <link rel="stylesheet" href="./content-v2.css?v=studio-v2">
+  <link rel="stylesheet" href="./nav-directory.css?v=nav-20261118-01">
   <title>Xu Nuo / 徐诺 — Artist</title>
 </head>
 <body data-page="home">
@@ -21,10 +22,10 @@
 <header class="site-header">
   <a class="wordmark" href="./" aria-label="Xu Nuo home">XU NUO<span class="wordmark-cn">徐诺</span></a>
   <nav class="nav-spread" aria-label="Primary navigation">
-    <a href="#works" data-i18n="navWorks">Works</a>
-    <a href="#curatorial" data-i18n="navCuratorial">Curatorial</a>
-    <a href="#about" data-nav-en="CV / Contact" data-nav-zh="履历／联系">CV / Contact</a>
-    <a href="#texts" data-nav-en="Text" data-nav-zh="文本">Text</a>
+    <div class="nav-item" data-nav-menu="works"><a href="#works" data-i18n="navWorks">Works</a><button class="nav-disclosure" type="button" aria-expanded="false" aria-label="Show works menu">＋</button><div class="nav-popover" id="nav-menu-works" hidden></div></div>
+    <div class="nav-item" data-nav-menu="curatorial"><a href="#curatorial" data-i18n="navCuratorial">Curatorial</a><button class="nav-disclosure" type="button" aria-expanded="false" aria-label="Show curatorial menu">＋</button><div class="nav-popover" id="nav-menu-curatorial" hidden></div></div>
+    <div class="nav-item" data-nav-menu="cv"><a href="#about" data-nav-en="CV / Contact" data-nav-zh="履历／联系">CV / Contact</a><button class="nav-disclosure" type="button" aria-expanded="false" aria-label="Show CV and contact menu">＋</button><div class="nav-popover nav-popover--compact" id="nav-menu-cv" hidden></div></div>
+    <div class="nav-item" data-nav-menu="text"><a href="#texts" data-nav-en="Text" data-nav-zh="文本">Text</a><button class="nav-disclosure" type="button" aria-expanded="false" aria-label="Show text menu">＋</button><div class="nav-popover nav-popover--right" id="nav-menu-text" hidden></div></div>
   </nav>
   <button class="lang-toggle" type="button" aria-label="Toggle website language">中文</button>
 </header>
@@ -82,10 +83,10 @@
       <div class="about-left"><p class="eyebrow" data-i18n="aboutTag">BIOGRAPHY</p><p class="about-lead" data-i18n="aboutLead">Artist working with moving images, installations, performance, and text.</p><span class="about-hanzi" aria-hidden="true">徐诺</span></div>
       <div class="about-right">
         <p data-i18n="aboutBody">Xu Nuo (b. 2001, Hangzhou, China) is currently pursuing a master's degree at the School of Intermedia Art, China Academy of Art, with a research focus on Regional Perception and Mixed Reality. Her practice begins with subtle observations of everyday life, using image reconfiguration, material experimentation, site-specific interventions and constructed situations to reconsider the relationships between bodies, media and environments.</p>
-        <div class="cv-divider"></div><h3 data-i18n="educationLabel">Education</h3>
+        <div class="cv-divider"></div><h3 id="education" data-i18n="educationLabel">Education</h3>
         <div class="cv-entry"><span>2024—2028</span><p data-i18n="eduMaster">MA, China Academy of Art, School of Intermedia Art — Regional Perception and Mixed Reality</p></div>
         <div class="cv-entry"><span>2020—2024</span><p data-i18n="eduBachelor">BA, China Academy of Art, School of Intermedia Art — Free Art Studio</p></div>
-        <div class="cv-divider"></div><h3 data-i18n="exhibitionsLabel">Selected Exhibitions</h3><div id="exhibition-list"></div>
+        <div class="cv-divider"></div><h3 id="exhibitions" data-i18n="exhibitionsLabel">Selected Exhibitions</h3><div id="exhibition-list"></div>
         <div class="cv-contact-inline"><span data-nav-en="Contact" data-nav-zh="联系方式">Contact</span><a href="mailto:xuoxnnxoux@gmail.com">xuoxnnxoux@gmail.com ↗</a></div>
         <div class="print-row"><button type="button" class="text-action" onclick="window.print()" data-i18n="printCV">Print / Save CV ↗</button></div>
       </div>
@@ -117,7 +118,8 @@
 <dialog id="image-viewer"><button type="button" class="viewer-close" aria-label="Close image">×</button><img alt=""></dialog>
 <footer><span>© <span id="footer-year">2026</span> XU NUO / 徐诺</span><span data-i18n="footerText">Image · Language · Perception</span><a href="#hero-title" data-i18n="backToTop">Back to top ↑</a></footer>
 <script src="./data.js?v=studio-content-20261118-02"></script>
-<script type="module" src="./app.js?v=studio-20261118-02"></script>
+<script type="module" src="./app.js?v=studio-20261118-03"></script>
+<script type="module" src="./nav-directory.js?v=nav-20261118-01"></script>
 <script type="module" src="./art-direction.js?v=names-03"></script>
 <script type="module" src="./name-field.js?v=names-03"></script>
 <script type="module" src="./site-content-v2.mjs?v=studio-v2"></script>
