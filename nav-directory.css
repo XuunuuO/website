@@ -12,7 +12,7 @@
 .nav-directory-heading{margin:0 0 1rem;color:#888;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase}
 .nav-year-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.3rem,1fr));gap:1.25rem 1.55rem}
 .nav-year-group h3{margin:0 0 .5rem;font-size:.78rem;font-weight:500;color:#888}
-.nav-directory-link{display:flex;flex-direction:column;gap:.2rem;padding:.32rem 0;color:inherit;text-decoration:none;font-size:.88rem;line-height:1.4}
+.nav-directory-link{display:flex;flex-direction:column;gap:.2rem;padding:.32rem 0;color:inherit;text-decoration:none;font-size:.88rem;line-height:1.4;min-width:0;white-space:normal;overflow-wrap:anywhere}
 .nav-directory-link:hover,.nav-directory-link:focus-visible{text-decoration:underline;text-underline-offset:.22em}
 .nav-directory-link small{color:#999;font-size:.68rem}
 .nav-directory-list{display:grid;gap:.35rem}
@@ -21,6 +21,7 @@
  .nav-disclosure{display:inline-flex}
  .nav-popover:not([hidden])::before{content:"";position:absolute;top:-.55rem;left:0;right:0;height:.55rem}
 .nav-item:hover>.nav-popover:not([hidden]){display:none}
+ .nav-item.is-open:hover>.nav-popover:not([hidden]){display:block}
  .nav-item.is-open>.nav-popover:not([hidden]){position:fixed;top:var(--nav-popover-top,4.25rem);right:1rem;left:1rem;width:auto;max-width:none;max-height:70vh;display:block}
  .nav-item:last-child>.nav-popover{right:1rem;left:1rem}
  .nav-year-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
