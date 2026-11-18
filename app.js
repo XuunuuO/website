@@ -17,7 +17,7 @@ document.title=title(w)+' — Xu Nuo / 徐诺';document.querySelector('meta[name
 qs('#project-number').textContent=t(curation?'curatorialLabel':'worksLabel')+' / '+w.year;
 qs('#project-title').textContent=title(w);qs('#project-subtitle').textContent=w.year+' · '+medium(w);
 qs('#project-hero').innerHTML=`<button class="image-zoom" aria-label="${esc(t('imageHint'))}">${img(w.cover||w.id,title(w)+', '+w.year,false)}</button>`;
-qs('#project-description').innerHTML=(lang==='zh'?w.descriptionZh:w.description).split('\n\n').map(p=>'<p>'+esc(p)+'</p>').join('');
+qs('#project-description').innerHTML=(lang==='zh'?w.descriptionZh:w.description).split('\n\n').map(p=>'<p>'+esc(p).replace(/\n/g,'<br>')+'</p>').join('');
 const video=qs('#project-video');video.replaceChildren();try{const v=videoInfo(w.video);if(v){if(v.type==='embed'){const iframe=document.createElement('iframe');iframe.src=v.url;iframe.title=title(w);iframe.allow='fullscreen; picture-in-picture';iframe.allowFullscreen=true;iframe.loading='lazy';iframe.referrerPolicy='strict-origin-when-cross-origin';video.append(iframe);}else{const player=document.createElement('video');player.src=v.url;player.controls=true;player.preload='metadata';player.playsInline=true;video.append(player);}}}catch{}
 qs('#project-gallery').innerHTML=(w.gallery||[]).map((id,i)=>`<figure><button class="image-zoom" aria-label="${esc(t('imageHint'))}">${img(id,title(w)+' — '+t('documentation')+' '+(i+2))}</button><figcaption>${t('documentation')} / ${String(i+2).padStart(2,'0')}</figcaption></figure>`).join('');
 qs('#project-next').innerHTML=`<span class="eyebrow">${t('nextWork')}</span><a href="./project.html?id=${encodeURIComponent(next.id)}">${esc(title(next))} ↗</a>`;
