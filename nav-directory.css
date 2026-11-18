@@ -29,3 +29,6 @@
  .nav-year-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
 }
 @media (prefers-reduced-motion:no-preference){.nav-popover:not([hidden]){animation:nav-in .14s ease-out}@keyframes nav-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}}
+.nav-year-group > a.nav-directory-link{display:flex!important;flex-direction:column;align-items:flex-start}
+.nav-year-group > a.nav-directory-link + a.nav-directory-link{margin-top:.2rem}
+
