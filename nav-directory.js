@@ -8,7 +8,14 @@ const homeHash=id=>document.body.dataset.page==='home'?'#'+id:'./#'+id;
 function link(href,label,meta=''){return `<a class="nav-directory-link" href="${esc(href)}"><span>${esc(label)}</span>${meta?`<small>${esc(meta)}</small>`:''}</a>`}
 function yearGroups(items){const groups={};for(const item of items){(groups[item.year]??=[]).push(item)}return Object.keys(groups).sort((a,b)=>Number(b)-Number(a)).map(year=>`<section class="nav-year-group"><h3>${esc(year)}</h3>${groups[year].map(w=>link(`./project.html?id=${encodeURIComponent(w.id)}`,title(w))).join('')}</section>`).join('')}
 function render(){
- const labels=lang()==='zh'?{works:'展开作品目录',curatorial:'展开策展目录',cv:'展开履历与联系目录',text:'展开文本目录'}:{works:'Show works menu',curatorial:'Show curatorial menu',cv:'Show CV and contact menu',text:'Show text menu'};qa('.nav-item').forEach(item=>{const b=q('.nav-disclosure',item);if(b)b.setAttribute('aria-label',labels[item.dataset.navMenu]||'Open menu')});
+ const labels=lang()==='zh'?{works:'展开作品目录',curatorial:'展开策展目录',cv:'展开履历与联系目录',text:'展开文本目录'}:{works:'Show works menu',curatorial:'Show curatorial menu',cv:'Show CV and contact menu',text:'Show text menu'};qa('.nav-item').forEach(item=>{const b=q('.nav-disclosure',item);if (b) {
+   const names = lang() === 'zh'
+     ? {works:'作品',curatorial:'策展',cv:'履历／联系',text:'文本'}
+     : {works:'Works',curatorial:'Curatorial',cv:'CV / Contact',text:'Text'};
+   b.textContent = names[item.dataset.navMenu];
+   b.setAttribute('aria-label',labels[item.dataset.navMenu]);
+   b.setAttribute('aria-controls','nav-menu-' + item.dataset.navMenu);
+ }});
  const activeWorks=data.works.filter(w=>!w.hidden),activeCuratorial=data.curatorial.filter(w=>!w.hidden);
  const workBox=q('#nav-menu-works');if(workBox){workBox.innerHTML=`<div class="nav-directory-heading">${lang()==='zh'?'按年份浏览作品':'Browse works by year'}</div><div class="nav-year-grid">${yearGroups(activeWorks)}</div>`;workBox.hidden=false;}
  const curBox=q('#nav-menu-curatorial');if(curBox){curBox.innerHTML=`<div class="nav-directory-heading">${lang()==='zh'?'策展及相关项目':'Curatorial projects'}</div><div class="nav-year-grid">${yearGroups(activeCuratorial)}</div>`;curBox.hidden=false;}
@@ -88,4 +95,5 @@ window.addEventListener('site-language-change',render);render();
   });
   desktop.addEventListener('change', reset);
 })();
+
 
