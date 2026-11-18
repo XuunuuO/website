@@ -29,3 +29,63 @@ document.addEventListener('click',e=>{if(!e.target.closest('.nav-item'))closeAll
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAll(null);document.activeElement?.blur?.()}});
 window.addEventListener('site-language-change',render);render();
 })();
+
+// Desktop visitors can hover to browse or click a section to keep its menu open.
+(() => {
+  const desktop = window.matchMedia('(hover: hover) and (min-width: 761px)');
+  const items = [...document.querySelectorAll('.nav-item')];
+  let pinned = null;
+  let timer;
+
+  function reset() {
+    clearTimeout(timer);
+    pinned = null;
+    for (const item of items) {
+      item.classList.remove('is-open');
+      item.querySelector('.nav-disclosure')?.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  for (const item of items) {
+    const trigger = item.querySelector(':scope > a');
+    const panel = item.querySelector('.nav-popover');
+    if (!trigger || !panel || panel.hidden) continue;
+
+    function open() {
+      clearTimeout(timer);
+      for (const other of items) {
+        if (other !== item) other.classList.remove('is-open');
+      }
+      item.classList.add('is-open');
+      item.querySelector('.nav-disclosure')?.setAttribute('aria-expanded', 'true');
+    }
+
+    item.addEventListener('pointerenter', event => {
+      if (!desktop.matches || event.pointerType !== 'mouse') return;
+      if (pinned !== item) pinned = null;
+      open();
+    });
+    item.addEventListener('pointerleave', event => {
+      if (!desktop.matches || event.pointerType !== 'mouse' || pinned === item) return;
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        if (!item.matches(':hover, :focus-within')) reset();
+      }, 550);
+    });
+    trigger.addEventListener('click', event => {
+      if (!desktop.matches || event.detail === 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (pinned === item) return;
+      event.preventDefault();
+      pinned = item;
+      open();
+    });
+  }
+  document.addEventListener('pointerdown', event => {
+    if (desktop.matches && !event.target.closest('.nav-item')) reset();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') pinned = null;
+  });
+  desktop.addEventListener('change', reset);
+})();
+
