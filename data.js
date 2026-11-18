@@ -320,35 +320,23 @@ window.SITE_DATA={
       ]
     },
     {
-      "id": "temporary-point",
-      "title": "Temporary Position",
+      "id": "here-i-work",
+      "title": "Here I Work",
       "zh": "临时点位",
       "year": "2023",
-      "medium": "Performance, sound, text, installation",
-      "mediumZh": "表演、声音、文本、装置",
-      "description": "A temporary week of self-assigned work in an unused shopping-mall space becomes a way to observe how labor, encounter, and changing uses give a place new meaning.",
+      "medium": "Performance, sound, text & found-object installation",
+      "mediumZh": "行为、声音、文本与现成物装置",
+      "description": "At an increasingly vacant shopping mall in Hangzhou, the artist assigned herself a temporary job. For one week she arrived at the same time every day, walked through empty retail and office spaces, recorded sounds, collected objects and completed daily reports. These materials were later presented in an abandoned office in the building. The work considers how a role or position acquires meaning through repeated actions and the changing uses of a space.\n\nThe self-assigned routine took place on the 16th floor of Xingguang Department Store. When someone spoke to the artist for the first time, she stopped recording. In June 2025, the mall’s management converted the office used to present the work into an art space.",
       "descriptionZh": "《临时点位》发生于杭州星光百货。商场内有许多曾被不同商业品牌使用的空间，部分办公室与店铺已经闲置，却仍保留着原有功能的痕迹。\n\n我在商场的16层，为自己安排了一份为期一周的临时工作。没有正式的雇佣关系，也没有人向我分配任务。我自行规定工作时间，每天按时抵达商场，在不同的空间中行走、观察，随身携带录音设备记录声音，收集遗留的物品，并填写每日工作报告。\n\n直到第一次有人主动与我交谈，我停止了录音。这次短暂的相遇，成为他人对这套由我独自建立的工作秩序作出的第一次回应。\n\n随后，我将收集到的声音、文字与物品重新整理，选择商场内一间废弃的办公室作为作品的展示场所。一个失去原有商业用途的空间，由此被暂时赋予了新的使用方式。\n\n2025年6月，商场将这里改造为27+艺术空间。\n\n从自行设定的工作身份，到对闲置空间的临时使用，再到场所此后的转变，《临时点位》关注一种身份如何在个人行动、与他人的相遇及空间用途的变化中，不断获得不同的意义。",
       "cover": "temporary-position",
       "gallery": [
-        "temporary-position-detail-01"
+        "temporary-position-detail-01",
+        "here-i-work-detail"
       ],
       "details": {
         "venueZh": "杭州星光百货；后为27+艺术空间",
         "venueEn": "Xingguang Department Store / 27+ Art Space"
       }
-    },
-    {
-      "id": "here-i-work",
-      "title": "Here I Work",
-      "zh": "我在这里工作",
-      "year": "2023",
-      "medium": "Performance, sound, text & found-object installation",
-      "mediumZh": "行为、声音、文本与现成物装置",
-      "description": "At an increasingly vacant shopping mall in Hangzhou, the artist assigned herself a temporary job. For one week she arrived at the same time every day, walked through empty retail and office spaces, recorded sounds, collected objects and completed daily reports. These materials were later presented in an abandoned office in the building. The work considers how a role or position acquires meaning through repeated actions and the changing uses of a space.\n\nThe self-assigned routine took place on the 16th floor of Xingguang Department Store. When someone spoke to the artist for the first time, she stopped recording. In June 2025, the mall’s management converted the office used to present the work into an art space.",
-      "descriptionZh": "在杭州一座出现大量空置铺位和办公室的商场里，艺术家为自己设立了一份并不存在的工作。连续一周，她准时抵达，巡查、录音、拾取物件，并填写工作日报。随后，相关材料被置于商场内一间废弃办公室中展示。作品关注身份与位置如何通过日常行动及场所功能的变化获得意义。\n\n这份自行设立的工作发生在星光百货的 16 楼。当第一次有人与艺术家交谈时，她停止了录音。2025 年 6 月，商场管理方将曾用于呈现作品的办公室改造为艺术空间。",
-      "gallery": [
-        "here-i-work-detail"
-      ]
     },
     {
       "id": "oplus",
