@@ -426,7 +426,45 @@ window.SITE_DATA={
       "description": "Deepfake images and photographs taken without their subjects’ knowledge were compressed into narrow strips with an aspect ratio of 1:30 with the help of AI, then folded by hand into paper stars. Visitors were invited to exchange any object for an equivalent weight of stars. Once-recognizable portraits disappeared inside folded objects that were subsequently valued by weight and quantity.",
       "descriptionZh": "我收集了一些深度伪造图像与未经当事人知情拍摄的照片，利用AI将它们处理成长宽比为1:30的细长图像，再亲手折成一颗颗纸星星。\n\n随后，我将这些星星带入一场交换活动，并设定了一条简单的规则：任何物件，都可以按照相同的重量换取星星。\n\n经过图像处理与反复折叠，原本可以辨认的面孔被包裹在纸星星内部。图像仍然存在，只是不再轻易显露。它们成为形态相似、可以称重与计数的物品，进入一套以重量为依据的交换关系。\n\n交换所得物件\n参与者可以用任何物品交换等重的纸星星。这些物品的材质、用途与来历各不相同，却遵循着同一条规则：只要重量相等，交换便可以成立。",
       "gallery": [
-        "infinite-star-detail"
+        "infinite-star-detail",
+        "infinite-star-p41-layout",
+        "infinite-star-p41-02",
+        "infinite-star-p41-03",
+        "infinite-star-p41-04",
+        "infinite-star-p41-05",
+        "infinite-star-p41-06",
+        "infinite-star-p41-07",
+        "infinite-star-p41-08",
+        "infinite-star-p41-10",
+        "infinite-star-p41-11",
+        "infinite-star-p41-12",
+        "infinite-star-p41-15",
+        "infinite-star-p42-02",
+        "infinite-star-p42-03",
+        "infinite-star-p42-04",
+        "infinite-star-p42-05",
+        "infinite-star-p42-06",
+        "infinite-star-p42-07",
+        "infinite-star-p42-08",
+        "infinite-star-p42-09",
+        "infinite-star-p42-10",
+        "infinite-star-p42-11",
+        "infinite-star-p42-12",
+        "infinite-star-p42-13",
+        "infinite-star-p42-14",
+        "infinite-star-p42-15",
+        "infinite-star-p42-16",
+        "infinite-star-p42-17",
+        "infinite-star-p42-18",
+        "infinite-star-p42-19",
+        "infinite-star-p42-20",
+        "infinite-star-p42-21",
+        "infinite-star-p42-22",
+        "infinite-star-p42-23",
+        "infinite-star-p42-24",
+        "infinite-star-p42-25",
+        "infinite-star-p42-26",
+        "infinite-star-p42-27"
       ]
     },
     {
@@ -438,7 +476,28 @@ window.SITE_DATA={
       "mediumZh": "行为、装置与影像",
       "description": "Following Infinite Star Factory, the handmade stars entered a livestream shopping format. Viewers ordered the stars by the scoop. As the unit of exchange shifted from weight to scoops, the quantity of the objects became more important to the transaction than the images originally printed on them.",
       "descriptionZh": "延续《星星无限工厂》，我们将手工折叠的纸星星带入直播带货的场景，并以“勺”为单位进行售卖。观众在直播间按勺下单，买下三勺，我们便从成堆的星星中舀出三勺。\n\n这些星星原本来自不同的人物肖像。经过图像处理、打印与折叠，原本可以辨认的面孔被收纳进小小的纸星星中，成为可以用勺计量、购买的物品。\n\n从按重量交换到按勺售卖，计量的方式发生了变化。至于每颗星星中究竟藏着什么图像，似乎已不再重要。人们开始关心一勺能够装下多少颗星星，而那些被折叠起来的面孔，仍然留在其中。",
-      "gallery": []
+      "gallery": [
+        "leftover-images-p43-layout",
+        "leftover-images-p43-03",
+        "leftover-images-p43-04",
+        "leftover-images-p43-05",
+        "leftover-images-p43-06",
+        "leftover-images-p43-07",
+        "leftover-images-p43-08",
+        "leftover-images-p43-09",
+        "leftover-images-p43-10",
+        "leftover-images-p43-12",
+        "leftover-images-p43-13",
+        "leftover-images-p43-14",
+        "leftover-images-p43-15",
+        "leftover-images-p43-16",
+        "leftover-images-p43-17",
+        "leftover-images-p43-18",
+        "leftover-images-p43-19",
+        "leftover-images-p43-20",
+        "leftover-images-p43-21",
+        "leftover-images-p43-22"
+      ]
     },
     {
       "id": "mu",
@@ -449,7 +508,9 @@ window.SITE_DATA={
       "mediumZh": "影像，1分30秒",
       "description": "One hundred fragments filmed in everyday life were repeatedly enlarged until their subjects became unrecognizable. What first seemed like a search for clarity ended in colors, textures and small traces of movement. All one hundred fragments ultimately fit into a tiny patch of projected light.",
       "descriptionZh": "我从日常生活中随意选取了一百段影像，不断将它们放大，直到再也无法辨认自己究竟拍下了什么。\n\n我原以为，放大意味着看得更清楚。没想到画面越大，能够辨认的东西反而越少，只剩下颜色、肌理，以及些许运动的痕迹。\n\n最后，这一百段影像竟然都被容纳进一小片光里。",
-      "gallery": []
+      "gallery": [
+        "mu-p44-02"
+      ]
     },
     {
       "id": "my-home",
@@ -461,7 +522,23 @@ window.SITE_DATA={
       "description": "Filmed at Dayuanshe, a community arts organization in Yongzhou, Hunan, this film emerged from conversations, writing and creative activities with local children. Poems, memories of an open-air amphitheater and surrounding landscapes move into imaginings of rivers, the sun, the moon and the universe. The film asks how a place is remembered, described and imagined.\n\nPoems written by the children and fragments of dialogue move between observations of nature and imaginings of time, space, and existence. Recurring images of water, circles, the sun, and the moon connect the passages. Home carries different meanings for the children who live there and for the artists visiting temporarily.",
       "descriptionZh": "《我的家园》拍摄于湖南永州大源社，作品在与当地儿童的交谈、写作及共同创作中逐渐形成。\n\n影像从当地一处露天剧场的变化展开，将孩子们写下的诗歌、关于场所的记忆与周围的自然景观交织在一起。叙述从一处具体的地方出发，逐渐延伸至河流、太阳、月亮，以及遥远的宇宙。\n\n影片收录了孩子们创作的诗歌与交谈的片段。那些文字时而描绘眼前的自然，时而又将想象延伸至时间、空间与生命的存在。流水、圆形、太阳与月亮等意象反复出现，串联起不同的诗句与画面。\n\n对于生活在这里的孩子们，以及短暂停留的我们而言，“家园”或许有着不同的含义。那些熟悉或陌生的地方，在各自的记忆、讲述与想象中，逐渐显现出不同的模样。\n\n天的边缘是什么？\n书的结局是什么？\n海的对岸是什么？\n你的心里是什么？\n\n从此以后，\n我不再是人类，\n而是宇宙的孩子。",
       "gallery": [
-        "my-home-detail"
+        "my-home-detail",
+        "my-home-p45-06",
+        "my-home-p45-04",
+        "my-home-p45-05",
+        "my-home-p46-02",
+        "my-home-p46-07",
+        "my-home-p46-05",
+        "my-home-p46-06",
+        "my-home-p46-03",
+        "my-home-p46-04",
+        "my-home-p47-02",
+        "my-home-p47-03",
+        "my-home-p47-07",
+        "my-home-p47-06",
+        "my-home-p47-05",
+        "my-home-p47-04",
+        "my-home-p48-layout"
       ]
     }
   ],
@@ -473,9 +550,12 @@ window.SITE_DATA={
       "year": "2026",
       "medium": "Curator & participating artist · FutureLab, Shanghai",
       "mediumZh": "策展人及参展艺术家 · 上海 FutureLab",
-      "description": "A group exhibition bringing together current students and alumni of the Regional Perception and Mixed Reality Lab at China Academy of Art, held at West Bund Dome Art Center, Shanghai, November 10–15, 2026. For an artwork to appear here, it must first leave somewhere else. Through selection, naming, transportation and installation, the works acquire temporary positions while their surrounding relationships change.",
-      "descriptionZh": "一段话语的解释、一种感受的定义、一个细微的观察、一场展览的发生，它们之间有什么关系？\n\n此次参展FutureLab，中国美术学院跨媒体艺术学院区域感知与混合现实实验组以“出现场”为题，汇集实验组不同阶段在校生与毕业生成员的创作。\n\n“出现场”既可以被理解为一个动作，也可以被读作“出现的场”。“出”意味着离开，也显露出另一种进入。所谓现场，也随着不同事物的进入、相遇与错位而逐渐成形。\n\n为了出现在这里，一件作品首先需要离开别处。经过选择、命名、运输与安装，它获得一个暂时的位置，被观看、解释，也可能被误读。展览结束后，作品又被拆除、装箱，再次离场。从一个现场出去，恰恰也是进入另一个现场的开始。作品似乎仍是原来的作品，围绕它的关系却已悄然改变。\n\n这些来去，也发生在创作者身上。有人仍在学院持续实验，有人已进入工作、迁徙与更具体的生活。创作在不同的处境中以各自的方式延续，而那些原本分散的话语、感受与观察，在这里得以短暂靠近。它们未必需要彼此解释，也不必指向同一种意义。某些联系因相遇而显露，另一些则仍然悬而未决。\n\n我们只是关心，它们为何来到这里？",
-      "gallery": []
+      "description": "November 10–15, 2026 · West Bund Dome Art Center, Shanghai, China\nCurator and participating artist\n9 individual artists and 1 artist collective (14 artists in total)\n\nOn the Site; Off the Site brought together works by current students and alumni of the Regional Perception and Mixed Reality Lab at China Academy of Art. The Chinese title suggests both the act of entering or leaving a site and the emergence of a site itself. For an artwork to appear here, it must first leave somewhere else.\n\nThrough selection, naming, transportation, and installation, it takes on a temporary position, where it may be viewed, interpreted, or misunderstood. The artworks may remain the same, while the relationships surrounding them change.\n\nDifferent artistic practices, experiences, and observations meet here briefly, without necessarily arriving at a shared meaning.",
+      "descriptionZh": "2026 年 11 月 10–15 日 · 上海西岸穹顶艺术中心\n策展人、参展艺术家\n9 位独立艺术家与 1 个艺术家小组，共 14 位艺术家\n\n一段话语的解释、一种感受的定义、一个细微的观察、一场展览的发生，它们之间有什么关系？\n\n此次参展FutureLab，中国美术学院跨媒体艺术学院区域感知与混合现实实验组以“出现场”为题，汇集实验组不同阶段在校生与毕业生成员的创作。\n\n“出现场”既可以被理解为一个动作，也可以被读作“出现的场”。“出”意味着离开，也显露出另一种进入。所谓现场，也随着不同事物的进入、相遇与错位而逐渐成形。\n\n为了出现在这里，一件作品首先需要离开别处。经过选择、命名、运输与安装，它获得一个暂时的位置，被观看、解释，也可能被误读。展览结束后，作品又被拆除、装箱，再次离场。从一个现场出去，恰恰也是进入另一个现场的开始。作品似乎仍是原来的作品，围绕它的关系却已悄然改变。\n\n这些来去，也发生在创作者身上。有人仍在学院持续实验，有人已进入工作、迁徙与更具体的生活。创作在不同的处境中以各自的方式延续，而那些原本分散的话语、感受与观察，在这里得以短暂靠近。它们未必需要彼此解释，也不必指向同一种意义。某些联系因相遇而显露，另一些则仍然悬而未决。\n\n我们只是关心，它们为何来到这里？",
+      "gallery": [
+        "on-the-site-p51-01",
+        "on-the-site-p51-02"
+      ]
     },
     {
       "id": "blade-of-grass",
@@ -484,9 +564,17 @@ window.SITE_DATA={
       "year": "2026",
       "medium": "Curator · ABI SPACE / PING, Hangzhou",
       "mediumZh": "策展人 · 杭州 ABI SPACE / PING",
-      "description": "Presented June 7–22, 2026, this group exhibition invited visitors to imagine viewing the world from a different height. Painting, moving images and installations turned attention toward cracks between stones, drifting willow catkins, leaves and other details of the everyday world, creating room for perception, play and imagination.",
-      "descriptionZh": "欢迎来到这片大地。\n这里没有中心，\n没有围墙。\n你听，\n风在来回地跑。\n打开你的皮肤吧！\n你会看见，\n每块石头缝隙里，\n都藏着一双双亮晶晶的眼睛。\n请把身体再放低一点……\n试着把眼睛贴紧地面，\n你的膝盖会听到柳絮的喃喃自语。\n看，这里散落着一些奇怪的东西：\n永远不会落下的太阳，\n在纸上继续生长的花。\n还有一直变化图案的树。\n快忘掉他们的规矩吧！\n现在，\n请把自己的身体，\n变成一粒小小的种子，\n变成一段悬浮在空中的根。\n闭上眼睛，再重新睁开。\n你看，\n有一片叶子，正在学习成为一只手。\n有一片花丛，从来不需要说晚安。\n一切，都在缓慢组成我们吗？\n那么，开始你的游戏吧！\n请闭上眼睛，\n数到三、二、一——",
-      "gallery": []
+      "description": "June 7–22, 2026 · ABI SPACE / PING, Hangzhou, China\nCurator\n\nToday, I Am as Tall as a Blade of Grass invites visitors to imagine viewing the world from a different height, turning their attention to cracks between stones, drifting willow catkins, leaves, and other easily overlooked details.\n\nBringing together painting, moving images, and installations, the exhibition features an unsetting sun, flowers growing on paper, a tree with shifting patterns, and suspended roots. These works form a space between everyday experience and imagination.\n\nBy reconsidering bodily scale and ways of looking, the exhibition invites viewers to encounter familiar things differently, making room for perception, play, and imagination.",
+      "descriptionZh": "2026 年 6 月 7–22 日 · 杭州 ABI 艺术空间\n策展人\n\n欢迎来到这片大地。\n这里没有中心，\n没有围墙。\n你听，\n风在来回地跑。\n打开你的皮肤吧！\n你会看见，\n每块石头缝隙里，\n都藏着一双双亮晶晶的眼睛。\n请把身体再放低一点……\n试着把眼睛贴紧地面，\n你的膝盖会听到柳絮的喃喃自语。\n看，这里散落着一些奇怪的东西：\n永远不会落下的太阳，\n在纸上继续生长的花。\n还有一直变化图案的树。\n快忘掉他们的规矩吧！\n现在，\n请把自己的身体，\n变成一粒小小的种子，\n变成一段悬浮在空中的根。\n闭上眼睛，再重新睁开。\n你看，\n有一片叶子，正在学习成为一只手。\n有一片花丛，从来不需要说晚安。\n一切，都在缓慢组成我们吗？\n那么，开始你的游戏吧！\n请闭上眼睛，\n数到三、二、一——",
+      "gallery": [
+        "blade-of-grass-p52-02",
+        "blade-of-grass-p53-02",
+        "blade-of-grass-p53-01",
+        "blade-of-grass-p54-01",
+        "blade-of-grass-p54-02",
+        "blade-of-grass-p54-04",
+        "blade-of-grass-p54-03"
+      ]
     },
     {
       "id": "surreal-xyz",
@@ -495,9 +583,12 @@ window.SITE_DATA={
       "year": "2026",
       "medium": "Curatorial working group · Zhejiang Art Museum",
       "mediumZh": "策展工作组成员 · 浙江美术馆",
-      "description": "The 2026 Free Art Studio graduation exhibition at Zhejiang Art Museum explored how memory, desire and imagination reshape coordinates usually defined by points, directions and distances. Xu Nuo participated as a member of the curatorial working group.",
-      "descriptionZh": "坐标以点、线、方向和距离，让世界变得可测量，也让抵达变得可预见。\n\n然而，人并不只存在于可被测量的空间之中。记忆、欲望、经验与想象，始终在改变我们观看世界的方式。于是，绝对的坐标开始偏移。它潜伏在草与地彼此编织的缝隙间，显露在百叶窗切割出的风景里，闪烁在衣架金属夹短暂的反光上。每一种事物都隐藏着另一种事物。\n\n“超现实坐标”在日常与梦境的交界处展开。这里没有墙壁，没有屋顶，也没有地板。它邀请你进入这些由创作者重新辨认与自身迸发的坐标中，从现实内部打开另一层现实。导航的终点往往通向已知，而创作的起点永远面向未知。我们从超现实的坐标中出发——凡可以想象的东西，都可以创造。天上布满星星，蓝图就在那里。\n\n“抵达你的坐标吧”，他们说。",
-      "gallery": []
+      "description": "Free Art Studio Graduation Exhibition, School of Intermedia Art, China Academy of Art · Zhejiang Art Museum, Hangzhou, China\nCo-curator\n\nCoordinates, defined by points, lines, directions and distances, measure the world and render every possible destination.\n\nYet humanity dwells beyond measurable space, while memory, desire, experience and imagination constantly reshape the ways we perceive the world.\n\nThus, absolute coordinates begin to drift. They lurk in the woven crevices between grass and earth, hide in scenes sliced by window blinds, and flash in the fleeting glint of a metal hanger clip. Each thing conceals another.\n\nSurreal XYZ unfolds on the border of the daily and the dream. Here there are no walls, no roof, no floor.",
+      "descriptionZh": "中国美术学院跨媒体艺术学院自由艺术工作室毕业展 · 杭州浙江美术馆\n联合策展人\n\n坐标以点、线、方向和距离，让世界变得可测量，也让抵达变得可预见。\n\n然而，人并不只存在于可被测量的空间之中。记忆、欲望、经验与想象，始终在改变我们观看世界的方式。于是，绝对的坐标开始偏移。它潜伏在草与地彼此编织的缝隙间，显露在百叶窗切割出的风景里，闪烁在衣架金属夹短暂的反光上。每一种事物都隐藏着另一种事物。\n\n“超现实坐标”在日常与梦境的交界处展开。这里没有墙壁，没有屋顶，也没有地板。它邀请你进入这些由创作者重新辨认与自身迸发的坐标中，从现实内部打开另一层现实。导航的终点往往通向已知，而创作的起点永远面向未知。我们从超现实的坐标中出发——凡可以想象的东西，都可以创造。天上布满星星，蓝图就在那里。\n\n“抵达你的坐标吧”，他们说。",
+      "gallery": [
+        "surreal-xyz-p56-01",
+        "surreal-xyz-p57-01"
+      ]
     },
     {
       "id": "mirror-world",
@@ -506,9 +597,14 @@ window.SITE_DATA={
       "year": "2025",
       "medium": "Creative direction, artistic coordination, visual & stage design · Yongzhou",
       "mediumZh": "艺术指导、统筹、视觉及舞美设计 · 湖南永州",
-      "description": "For a rural youth arts festival at Dayuanshe in Yongzhou, the artist led a student team from China Academy of Art. Working with local collaborators, the team developed children’s poems, paintings and performances into public visual designs, installations, costumes and stage productions.",
-      "descriptionZh": "在湖南永州大源社举办的乡村儿童艺术节中，艺术家带领中国美术学院学生团队与当地协作者共同工作，把儿童的诗歌、绘画与表演转化为公共呈现中的视觉设计、空间装置、服装与舞台作品。",
-      "gallery": []
+      "description": "2025 · Rural Youth Arts Festival · Dayuanshe, Yongzhou, Hunan, China\nCreative direction, artistic coordination, visual and stage design\n\nDayuanshe is a non-profit community arts organization in Yongzhou, Hunan Province. Since 2015, it has worked with local children through arts education, poetry, painting, and theater.\n\nIn 2025, I led a student team from the School of Intermedia Art at China Academy of Art to participate in Dayuanshe's rural youth arts festival, The Mirror of the World.\n\nThe festival built on poems, drawings, and performances previously created by the children. Working with the local team, we developed these works into poetry posters, visual designs, spatial installations, and stage productions. I led the student team's artistic direction and coordinated the creative process, while also contributing directly to visual design, stage production, costumes, and rehearsals.\n\nThrough this collaboration, the children's work moved from everyday art classes into a public presentation. My role was to bring together different media and contributors within a shared artistic setting.",
+      "descriptionZh": "2025 · 乡村儿童艺术节 · 湖南永州大源社\n艺术指导、艺术协调、视觉与舞台设计\n\n大源社是湖南永州的一家非营利社区艺术机构。自 2015 年起，大源社通过艺术教育、诗歌、绘画与戏剧，持续与当地儿童共同工作。\n\n2025 年，我带领中国美术学院跨媒体艺术学院的学生团队，参与大源社的乡村儿童艺术节《世界的镜子》。\n\n艺术节从孩子们此前创作的诗歌、绘画与表演出发。我们与当地团队合作，将这些作品发展为诗歌海报、视觉设计、空间装置与舞台演出。我负责学生团队的艺术指导与创作协调，也直接参与了视觉设计、舞台制作、服装与排练。\n\n通过这次合作，孩子们的作品从日常艺术课堂走向公共展示。我的工作是把不同媒介与参与者带到同一个艺术现场。",
+      "gallery": [
+        "mirror-world-p49-05",
+        "mirror-world-p49-04",
+        "mirror-world-p49-03",
+        "mirror-world-p49-02"
+      ]
     }
   ],
   "exhibitions": [
