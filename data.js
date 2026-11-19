@@ -348,8 +348,11 @@ window.SITE_DATA={
       "description": "Images, texts, and opinions overlap online, often giving an impression of completeness without necessarily producing understanding. In this installation, moving images are projected onto a wax structure made from soy wax, beeswax, pigment and a custom-blended fragrance. Its scented and changing surface carries images beyond the flat plane of a screen.",
       "descriptionZh": "图像、文字与观点不断涌现，来自不同位置的局部视角彼此覆盖、相互补充，逐渐拼凑出一种看似丰富而完整的意义图景。然而，信息的增加未必意味着理解的深入。无数片段即使被拼合为整体，也可能只形成一种扁平的认识。\n\n我将网络中夸张的影像从屏幕中移出，投射于由大豆蜡、蜂蜡与颜料构成的蜡体之上。这些原本夺人眼球的影像失去了声音，随着材料表面的起伏而弯折、断裂、重叠，进入一个具有体积、肌理与气味的空间。\n\n蜡是一种能够在热与时间中改变自身的材料。我在其中掺入略带苦调的香氛。随着投影的持续，光与热使蜡的表面缓慢软化，气味逐渐弥散，影像也随材料的细微变化而改变。蜡承载着图像，也在自身的变化中重新塑造图像。\n\n那些原本停留在平面上的视觉信息，如今与温度、气味和时间发生联系。观看逐渐延伸至视觉之外。被不断叠加的图像似乎构成了一个整体，而蜡的缓慢变化，又使这个整体始终无法定形。",
       "gallery": [
-        "oplus-detail"
-      ]
+        "oplus-archive-02",
+        "oplus-archive-03",
+        "oplus-archive-04"
+      ],
+      "cover": "oplus-archive-01"
     },
     {
       "id": "wing-it",
@@ -394,8 +397,18 @@ window.SITE_DATA={
       "description": "Moving between observations of everyday life, mythological cosmologies and scientific models, the artist constructed an open-ended model of a world of her own. Metal structures, suspended objects, rings, paintings and AI-generated video form a system of positions and relationships that can be continually rearranged. The work resists a definitive point of completion.",
       "descriptionZh": "我始终对人们如何理解和描述世界感兴趣。从神话中的宇宙观，到科学模型与测量体系，人们借助图像、符号与物件，将对世界的观察组织成某种可以理解的秩序。\n\n《单位一》始于我对日常事物的观察。我从身边物件的形态、位置及其相互关系出发，将这些观察与神话、科学模型中的观念结合，利用金属结构、圆环、悬置物、绘画和AI生成影像，尝试构建一套属于自己的世界模型。\n\n在创作过程中，我不断为不同的物件赋予位置、尺度与关系，将它们编排进一个看似遵循某种规则的系统。然而，这套系统似乎始终没有明确的完成标准。每一次排列都可以暂时成立，也随时可能被重新调整。\n\n事实上，我也不确定这件作品是否已经完成。",
       "gallery": [
-        "unit-one-detail"
-      ]
+        "unit-one-archive-02",
+        "unit-one-archive-03",
+        "unit-one-archive-04",
+        "unit-one-archive-05",
+        "unit-one-archive-06",
+        "unit-one-archive-07",
+        "unit-one-archive-08",
+        "unit-one-archive-09",
+        "unit-one-archive-10",
+        "unit-one-archive-11"
+      ],
+      "cover": "unit-one-archive-01"
     },
     {
       "id": "reclamation",

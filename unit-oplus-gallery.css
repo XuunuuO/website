@@ -1,0 +1,30 @@
+#project-gallery:has(img[src*="unit-one-archive-"]),
+#project-gallery:has(img[src*="oplus-archive-"]) {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(2rem, 5vw, 5rem) clamp(.7rem, 2vw, 2rem);
+}
+#project-gallery:has(img[src*="unit-one-archive-"]) figure:nth-child(n) {
+  grid-column: span 2;
+  margin: 0;
+}
+#project-gallery:has(img[src*="unit-one-archive-"]) figure:nth-child(7) {
+  grid-column: 2 / span 4;
+}
+#project-gallery:has(img[src*="unit-one-archive-"]) figure:nth-child(8) {
+  grid-column: 1 / span 2;
+}
+#project-gallery:has(img[src*="oplus-archive-"]) figure:nth-child(n) {
+  grid-column: span 3;
+  margin: 0;
+}
+#project-gallery:has(img[src*="oplus-archive-"]) figure:first-child {
+  grid-column: 1 / -1;
+}
+@media (max-width: 700px) {
+  #project-gallery:has(img[src*="unit-one-archive-"]) figure:nth-child(n),
+  #project-gallery:has(img[src*="oplus-archive-"]) figure:nth-child(n) {
+    grid-column: 1 / -1;
+  }
+}
