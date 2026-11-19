@@ -294,3 +294,19 @@ body[data-font-style="experimental"] .hero h1,body[data-font-style="experimental
   a,button,[role="button"],#archive-toggle,.viewer-close,.text-action{cursor:pointer}
   input,textarea,select,[contenteditable="true"]{cursor:text}
 }
+
+
+/* Portfolio cards follow each artwork image's native proportions. */
+.work-card .card-img {
+  aspect-ratio: auto !important;
+  height: auto !important;
+  display: block;
+  overflow: visible;
+  background: transparent !important;
+}
+.work-card .card-img img {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+}
