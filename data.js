@@ -361,8 +361,16 @@ window.SITE_DATA={
       "description": "Bones left after cooking chicken wings are cleaned, dried and joined with wire and adhesive to form working clothes hangers. Bones that once supported a body from within are made to support garments outside the body. Their slight deformation, irregular joints and relationship to the exhibition space remain visible.\n\nThree hangers are suspended in a row; uneven weight distribution causes slight deformation. In another setting, a single hanger makes the irregular bones, wire joints, and relationship to the surrounding architecture more apparent.",
       "descriptionZh": "鸡衣架\n取鸡翅与翅根的骨头。\n\n杀鸡、拔毛、切块，清水洗净。\n\n用牛奶与胡椒腌制，裹上蛋液与淀粉，入油锅炸制。捞出，撒上辣椒粉。\n\n剔去肉与筋，将骨头浸入双氧水，晾干，去除骨髓。\n\n用铁丝串起骨头，将其压紧、涂胶、固定连接处。\n\n组装成衣架，一字排开，悬挂三个。\n\n受力不均，略有变形。\n\n作品始于烹饪后剩余的鸡翅与翅根骨头。我将这些骨头清洗、晾干，再以铁丝与骨头之间的缝隙重新连接，制作成可以实际使用的衣架。\n\n骨骼原本从内部支撑着身体，经过烹饪、食用与重新组装，又成为悬挂衣物的结构。支撑的功能得以延续，只是支撑的对象与位置发生了变化。骨头从身体内部来到外部，从食物的残余变成一件日常用品。\n\n作品在不同空间中以三只并排或单只悬挂的方式呈现。成排的衣架显现出重复中的差异；单独悬挂时，骨骼的不规则形态、铁丝的连接方式，以及它与周围空间的关系则更加突出。\n\n这些衣架确实能够使用，却始终保留着骨头原有的形状。由于重量分布不均，衣架在悬挂时会发生轻微的变形。",
       "gallery": [
-        "wing-it-detail"
-      ]
+        "wing-it-suspended-group",
+        "wing-it-joint-01",
+        "wing-it-joint-02",
+        "wing-it-joint-03",
+        "wing-it-joint-04",
+        "wing-it-single-installation",
+        "wing-it-single-detail",
+        "wing-it-single-view"
+      ],
+      "cover": "wing-it-gallery-view"
     },
     {
       "id": "while-looking",
